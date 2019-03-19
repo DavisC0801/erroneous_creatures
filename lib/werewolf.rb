@@ -1,5 +1,5 @@
 class Werewolf
-  attr_reader :name
+  attr_reader :name,
               :location
 
   attr_accessor :human,
@@ -13,7 +13,7 @@ class Werewolf
     @change = 0
     @werewolf = false
   end
-
+  
   def human?
     if @change.odd?
       false
